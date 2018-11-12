@@ -1,0 +1,1479 @@
+Creating snapcraft-bat
+Device fuse added to snapcraft-bat
+Waiting for a network connection...
+Network connection established
+core 16-2.35.5 from 'canonical' installed
+snapcraft 2.43.1 from Canonical✓ installed
+Mounting /home/alan/Source/4k/bat/bat into container
+Device /root/build_bat added to snapcraft-bat
+Installing build dependencies: binutils cpp cpp-5 gcc gcc-5 libasan2 libatomic1 libc-dev-bin libc6-dev libcc1-0 libcilkrts5 libgcc-5-dev libgomp1 libisl15 libitm1 liblsan0 libmpc3 libmpx0 libquadmath0 libtsan0 libubsan0 linux-libc-dev manpages-dev
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following package was automatically installed and is no longer required:
+  libfreetype6
+Use 'sudo apt autoremove' to remove it.
+Suggested packages:
+  binutils-doc cpp-doc gcc-5-locales gcc-multilib make autoconf automake
+  libtool flex bison gdb gcc-doc gcc-5-multilib gcc-5-doc libgcc1-dbg
+  libgomp1-dbg libitm1-dbg libatomic1-dbg libasan2-dbg liblsan0-dbg
+  libtsan0-dbg libubsan0-dbg libcilkrts5-dbg libmpx0-dbg libquadmath0-dbg
+  glibc-doc
+The following NEW packages will be installed:
+  binutils cpp cpp-5 gcc gcc-5 libasan2 libatomic1 libc-dev-bin libc6-dev
+  libcc1-0 libcilkrts5 libgcc-5-dev libgomp1 libisl15 libitm1 liblsan0 libmpc3
+  libmpx0 libquadmath0 libtsan0 libubsan0 linux-libc-dev manpages-dev
+0 upgraded, 23 newly installed, 0 to remove and 0 not upgraded.
+Need to get 27.3 MB of archives.
+After this operation, 99.9 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 libmpc3 amd64 1.0.3-1 [39.7 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 binutils amd64 2.26.1-1ubuntu1~16.04.7 [2309 kB]
+Get:3 http://archive.ubuntu.com/ubuntu xenial/main amd64 libisl15 amd64 0.16.1-1 [524 kB]
+Get:4 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 cpp-5 amd64 5.4.0-6ubuntu1~16.04.10 [7671 kB]
+Get:5 http://archive.ubuntu.com/ubuntu xenial/main amd64 cpp amd64 4:5.3.1-1ubuntu1 [27.7 kB]
+Get:6 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcc1-0 amd64 5.4.0-6ubuntu1~16.04.10 [38.8 kB]
+Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgomp1 amd64 5.4.0-6ubuntu1~16.04.10 [55.1 kB]
+Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libitm1 amd64 5.4.0-6ubuntu1~16.04.10 [27.4 kB]
+Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libatomic1 amd64 5.4.0-6ubuntu1~16.04.10 [8888 B]
+Get:10 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libasan2 amd64 5.4.0-6ubuntu1~16.04.10 [264 kB]
+Get:11 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 liblsan0 amd64 5.4.0-6ubuntu1~16.04.10 [105 kB]
+Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libtsan0 amd64 5.4.0-6ubuntu1~16.04.10 [244 kB]
+Get:13 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libubsan0 amd64 5.4.0-6ubuntu1~16.04.10 [95.3 kB]
+Get:14 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcilkrts5 amd64 5.4.0-6ubuntu1~16.04.10 [40.1 kB]
+Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libmpx0 amd64 5.4.0-6ubuntu1~16.04.10 [9764 B]
+Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libquadmath0 amd64 5.4.0-6ubuntu1~16.04.10 [131 kB]
+Get:17 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgcc-5-dev amd64 5.4.0-6ubuntu1~16.04.10 [2228 kB]
+Get:18 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 gcc-5 amd64 5.4.0-6ubuntu1~16.04.10 [8426 kB]
+Get:19 http://archive.ubuntu.com/ubuntu xenial/main amd64 gcc amd64 4:5.3.1-1ubuntu1 [5244 B]
+Get:20 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc-dev-bin amd64 2.23-0ubuntu10 [68.7 kB]
+Get:21 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-libc-dev amd64 4.4.0-138.164 [859 kB]
+Get:22 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc6-dev amd64 2.23-0ubuntu10 [2079 kB]
+Get:23 http://archive.ubuntu.com/ubuntu xenial/main amd64 manpages-dev all 4.04-2 [2048 kB]
+Fetched 27.3 MB in 7s (3424 kB/s)
+Selecting previously unselected package libmpc3:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25682 files and directories currently installed.)
+Preparing to unpack .../libmpc3_1.0.3-1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.0.3-1) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../binutils_2.26.1-1ubuntu1~16.04.7_amd64.deb ...
+Unpacking binutils (2.26.1-1ubuntu1~16.04.7) ...
+Selecting previously unselected package libisl15:amd64.
+Preparing to unpack .../libisl15_0.16.1-1_amd64.deb ...
+Unpacking libisl15:amd64 (0.16.1-1) ...
+Selecting previously unselected package cpp-5.
+Preparing to unpack .../cpp-5_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking cpp-5 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../cpp_4%3a5.3.1-1ubuntu1_amd64.deb ...
+Unpacking cpp (4:5.3.1-1ubuntu1) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../libcc1-0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libcc1-0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../libgomp1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libgomp1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../libitm1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libitm1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../libatomic1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libatomic1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libasan2:amd64.
+Preparing to unpack .../libasan2_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libasan2:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../liblsan0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking liblsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libtsan0:amd64.
+Preparing to unpack .../libtsan0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libtsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libubsan0:amd64.
+Preparing to unpack .../libubsan0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libubsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libcilkrts5:amd64.
+Preparing to unpack .../libcilkrts5_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libcilkrts5:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libmpx0:amd64.
+Preparing to unpack .../libmpx0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libmpx0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../libquadmath0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libquadmath0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libgcc-5-dev:amd64.
+Preparing to unpack .../libgcc-5-dev_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libgcc-5-dev:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package gcc-5.
+Preparing to unpack .../gcc-5_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking gcc-5 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../gcc_4%3a5.3.1-1ubuntu1_amd64.deb ...
+Unpacking gcc (4:5.3.1-1ubuntu1) ...
+Selecting previously unselected package libc-dev-bin.
+Preparing to unpack .../libc-dev-bin_2.23-0ubuntu10_amd64.deb ...
+Unpacking libc-dev-bin (2.23-0ubuntu10) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../linux-libc-dev_4.4.0-138.164_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (4.4.0-138.164) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../libc6-dev_2.23-0ubuntu10_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.23-0ubuntu10) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../manpages-dev_4.04-2_all.deb ...
+Unpacking manpages-dev (4.04-2) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up libmpc3:amd64 (1.0.3-1) ...
+Setting up binutils (2.26.1-1ubuntu1~16.04.7) ...
+Setting up libisl15:amd64 (0.16.1-1) ...
+Setting up cpp-5 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up cpp (4:5.3.1-1ubuntu1) ...
+Setting up libcc1-0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libgomp1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libitm1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libatomic1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libasan2:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up liblsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libtsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libubsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libcilkrts5:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libmpx0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libquadmath0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libgcc-5-dev:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up gcc-5 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up gcc (4:5.3.1-1ubuntu1) ...
+Setting up libc-dev-bin (2.23-0ubuntu10) ...
+Setting up linux-libc-dev:amd64 (4.4.0-138.164) ...
+Setting up libc6-dev:amd64 (2.23-0ubuntu10) ...
+Setting up manpages-dev (4.04-2) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+binutils set to automatically installed.
+cpp set to automatically installed.
+cpp-5 set to automatically installed.
+gcc set to automatically installed.
+gcc-5 set to automatically installed.
+libasan2 set to automatically installed.
+libatomic1 set to automatically installed.
+libc-dev-bin set to automatically installed.
+libc6-dev set to automatically installed.
+libcc1-0 set to automatically installed.
+libcilkrts5 set to automatically installed.
+libgcc-5-dev set to automatically installed.
+libgomp1 set to automatically installed.
+libisl15 set to automatically installed.
+libitm1 set to automatically installed.
+liblsan0 set to automatically installed.
+libmpc3 set to automatically installed.
+libmpx0 set to automatically installed.
+libquadmath0 set to automatically installed.
+libtsan0 set to automatically installed.
+libubsan0 set to automatically installed.
+linux-libc-dev set to automatically installed.
+manpages-dev set to automatically installed.
+Pulling bat 
+rustup: gpg available. signatures will be verified
+rustup: downloading manifest for 'stable'
+rustup: downloading toolchain for 'stable'
+gpg: assuming signed data in `/root/.rustup.sh/dl/cc8107b58e540b213a90/rust-1.30.1-x86_64-unknown-linux-gnu.tar.gz'
+gpg: Signature made Thu Nov  8 17:15:57 2018 UTC using RSA key ID 7B3B09DC
+gpg: Good signature from "Rust Language (Tag and Release Signing Key) <rust-key@rust-lang.org>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 108F 6620 5EAE B0AA A8DD  5E1C 85AB 96E6 FA1B E5FE
+     Subkey fingerprint: C134 66B7 E169 A085 1886  3216 5CB4 A934 7B3B 09DC
+rustup: installing toolchain for 'stable'
+rustup: extracting installer
+install: creating uninstall script at /root/build_bat/parts/bat/rust/lib/rustlib/uninstall.sh
+install: installing component 'rustc'
+install: installing component 'cargo'
+install: installing component 'rls-preview'
+install: installing component 'clippy-preview'
+install: installing component 'rustfmt-preview'
+install: installing component 'llvm-tools-preview'
+install: installing component 'rust-analysis-x86_64-unknown-linux-gnu'
+install: installing component 'rust-std-x86_64-unknown-linux-gnu'
+install: installing component 'rust-docs'
+
+    Rust is ready to roll.
+
+/root/build_bat/parts/bat/rust/rustup.sh --prefix=/root/build_bat/parts/bat/rust --disable-sudo --save
+/root/build_bat/parts/bat/rust/bin/cargo fetch --manifest-path /root/build_bat/parts/bat/src/Cargo.toml
+Building bat 
+
+running 19 tests
+test config::empty ... ok
+test config::comments ... ok
+test config::multi_line ... ok
+test config::single ... ok
+test config::multiple ... ok
+test inputfile::utf16le ... ok
+test config::quotes ... ok
+test inputfile::basic ... ok
+test line_range::test_parse_fail ... ok
+test line_range::test_parse_partial_max ... ok
+test line_range::test_ranges_open_high ... ok
+test line_range::test_ranges_open_low ... ok
+test line_range::test_ranges_simple ... ok
+test util::tests::basic ... ok
+test syntax_mapping::basic ... ok
+test line_range::test_parse_full ... ok
+test line_range::test_ranges_empty ... ok
+test line_range::test_ranges_advanced ... ok
+test line_range::test_parse_partial_min ... ok
+
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
+
+
+running 24 tests
+test concatenate ... FAILED
+test config_read_arguments_from_file ... FAILED
+test do_not_exit_directory ... FAILED
+test fail_non_existing ... FAILED
+test basic ... FAILED
+test config_location_test ... FAILED
+test concatenate_stdin ... FAILED
+test fail_directory ... FAILED
+test line_numbers ... FAILED
+test line_range_2_3 ... FAILED
+test line_range_first_two ... FAILED
+test pager_overwrite ... FAILED
+test pager_basic ... FAILED
+test tabs_4 ... FAILED
+test tabs_4_wrapped ... FAILED
+test line_range_last_3 ... FAILED
+test line_range_multiple ... FAILED
+test tabs_numbers ... FAILED
+test pager_disable ... FAILED
+test stdin ... FAILED
+test tabs_passthrough_wrapped ... FAILED
+test tabs_8 ... FAILED
+test tabs_passthrough ... FAILED
+test tabs_8_wrapped ... FAILED
+
+failures:
+
+---- concatenate stdout ----
+thread 'concatenate' panicked at 'called `Result::unwrap()` on an `Err` value: CargoError { kind: InvalidCommand, context: None, cause: Some(Os { code: 2, kind: NotFound, message: "No such file or directory" }) }', libcore/result.rs:1009:5
+note: Run with `RUST_BACKTRACE=1` for a backtrace.
+
+---- config_read_arguments_from_file stdout ----
+thread 'config_read_arguments_from_file' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- do_not_exit_directory stdout ----
+thread 'do_not_exit_directory' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- fail_non_existing stdout ----
+thread 'fail_non_existing' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- basic stdout ----
+thread 'basic' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- config_location_test stdout ----
+thread 'config_location_test' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- concatenate_stdin stdout ----
+thread 'concatenate_stdin' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- fail_directory stdout ----
+thread 'fail_directory' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- line_numbers stdout ----
+thread 'line_numbers' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- line_range_2_3 stdout ----
+thread 'line_range_2_3' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- line_range_first_two stdout ----
+thread 'line_range_first_two' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- pager_overwrite stdout ----
+thread 'pager_overwrite' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- pager_basic stdout ----
+thread 'pager_basic' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_4 stdout ----
+thread 'tabs_4' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_4_wrapped stdout ----
+thread 'tabs_4_wrapped' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- line_range_last_3 stdout ----
+thread 'line_range_last_3' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- line_range_multiple stdout ----
+thread 'line_range_multiple' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_numbers stdout ----
+thread 'tabs_numbers' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- pager_disable stdout ----
+thread 'pager_disable' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- stdin stdout ----
+thread 'stdin' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_passthrough_wrapped stdout ----
+thread 'tabs_passthrough_wrapped' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_8 stdout ----
+thread 'tabs_8' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_passthrough stdout ----
+thread 'tabs_passthrough' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_8_wrapped stdout ----
+thread 'tabs_8_wrapped' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+
+failures:
+    basic
+    concatenate
+    concatenate_stdin
+    config_location_test
+    config_read_arguments_from_file
+    do_not_exit_directory
+    fail_directory
+    fail_non_existing
+    line_numbers
+    line_range_2_3
+    line_range_first_two
+    line_range_last_3
+    line_range_multiple
+    pager_basic
+    pager_disable
+    pager_overwrite
+    stdin
+    tabs_4
+    tabs_4_wrapped
+    tabs_8
+    tabs_8_wrapped
+    tabs_numbers
+    tabs_passthrough
+    tabs_passthrough_wrapped
+
+test result: FAILED. 0 passed; 24 failed; 0 ignored; 0 measured; 0 filtered out
+
+/root/build_bat/parts/bat/rust/bin/cargo test -j8
+Failed to run '/root/build_bat/parts/bat/rust/bin/cargo test -j8' for 'bat': Exited with code 101.
+Verify that the part is using the correct parameters and try again.
+Stopping local:snapcraft-bat
+Creating snapcraft-bat
+Device fuse added to snapcraft-bat
+Waiting for a network connection...
+Network connection established
+core 16-2.35.5 from 'canonical' installed
+snapcraft 2.43.1 from Canonical✓ installed
+Mounting /home/alan/Source/4k/bat/bat into container
+Device /root/build_bat added to snapcraft-bat
+Installing build dependencies: binutils cpp cpp-5 gcc gcc-5 libasan2 libatomic1 libc-dev-bin libc6-dev libcc1-0 libcilkrts5 libgcc-5-dev libgomp1 libisl15 libitm1 liblsan0 libmpc3 libmpx0 libquadmath0 libtsan0 libubsan0 linux-libc-dev manpages-dev
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following package was automatically installed and is no longer required:
+  libfreetype6
+Use 'sudo apt autoremove' to remove it.
+Suggested packages:
+  binutils-doc cpp-doc gcc-5-locales gcc-multilib make autoconf automake
+  libtool flex bison gdb gcc-doc gcc-5-multilib gcc-5-doc libgcc1-dbg
+  libgomp1-dbg libitm1-dbg libatomic1-dbg libasan2-dbg liblsan0-dbg
+  libtsan0-dbg libubsan0-dbg libcilkrts5-dbg libmpx0-dbg libquadmath0-dbg
+  glibc-doc
+The following NEW packages will be installed:
+  binutils cpp cpp-5 gcc gcc-5 libasan2 libatomic1 libc-dev-bin libc6-dev
+  libcc1-0 libcilkrts5 libgcc-5-dev libgomp1 libisl15 libitm1 liblsan0 libmpc3
+  libmpx0 libquadmath0 libtsan0 libubsan0 linux-libc-dev manpages-dev
+0 upgraded, 23 newly installed, 0 to remove and 0 not upgraded.
+Need to get 27.3 MB of archives.
+After this operation, 99.9 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 libmpc3 amd64 1.0.3-1 [39.7 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 binutils amd64 2.26.1-1ubuntu1~16.04.7 [2309 kB]
+Get:3 http://archive.ubuntu.com/ubuntu xenial/main amd64 libisl15 amd64 0.16.1-1 [524 kB]
+Get:4 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 cpp-5 amd64 5.4.0-6ubuntu1~16.04.10 [7671 kB]
+Get:5 http://archive.ubuntu.com/ubuntu xenial/main amd64 cpp amd64 4:5.3.1-1ubuntu1 [27.7 kB]
+Get:6 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcc1-0 amd64 5.4.0-6ubuntu1~16.04.10 [38.8 kB]
+Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgomp1 amd64 5.4.0-6ubuntu1~16.04.10 [55.1 kB]
+Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libitm1 amd64 5.4.0-6ubuntu1~16.04.10 [27.4 kB]
+Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libatomic1 amd64 5.4.0-6ubuntu1~16.04.10 [8888 B]
+Get:10 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libasan2 amd64 5.4.0-6ubuntu1~16.04.10 [264 kB]
+Get:11 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 liblsan0 amd64 5.4.0-6ubuntu1~16.04.10 [105 kB]
+Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libtsan0 amd64 5.4.0-6ubuntu1~16.04.10 [244 kB]
+Get:13 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libubsan0 amd64 5.4.0-6ubuntu1~16.04.10 [95.3 kB]
+Get:14 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcilkrts5 amd64 5.4.0-6ubuntu1~16.04.10 [40.1 kB]
+Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libmpx0 amd64 5.4.0-6ubuntu1~16.04.10 [9764 B]
+Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libquadmath0 amd64 5.4.0-6ubuntu1~16.04.10 [131 kB]
+Get:17 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgcc-5-dev amd64 5.4.0-6ubuntu1~16.04.10 [2228 kB]
+Get:18 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 gcc-5 amd64 5.4.0-6ubuntu1~16.04.10 [8426 kB]
+Get:19 http://archive.ubuntu.com/ubuntu xenial/main amd64 gcc amd64 4:5.3.1-1ubuntu1 [5244 B]
+Get:20 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc-dev-bin amd64 2.23-0ubuntu10 [68.7 kB]
+Get:21 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-libc-dev amd64 4.4.0-138.164 [859 kB]
+Get:22 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc6-dev amd64 2.23-0ubuntu10 [2079 kB]
+Get:23 http://archive.ubuntu.com/ubuntu xenial/main amd64 manpages-dev all 4.04-2 [2048 kB]
+Fetched 27.3 MB in 4s (5587 kB/s)
+Selecting previously unselected package libmpc3:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25682 files and directories currently installed.)
+Preparing to unpack .../libmpc3_1.0.3-1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.0.3-1) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../binutils_2.26.1-1ubuntu1~16.04.7_amd64.deb ...
+Unpacking binutils (2.26.1-1ubuntu1~16.04.7) ...
+Selecting previously unselected package libisl15:amd64.
+Preparing to unpack .../libisl15_0.16.1-1_amd64.deb ...
+Unpacking libisl15:amd64 (0.16.1-1) ...
+Selecting previously unselected package cpp-5.
+Preparing to unpack .../cpp-5_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking cpp-5 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../cpp_4%3a5.3.1-1ubuntu1_amd64.deb ...
+Unpacking cpp (4:5.3.1-1ubuntu1) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../libcc1-0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libcc1-0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../libgomp1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libgomp1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../libitm1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libitm1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../libatomic1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libatomic1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libasan2:amd64.
+Preparing to unpack .../libasan2_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libasan2:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../liblsan0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking liblsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libtsan0:amd64.
+Preparing to unpack .../libtsan0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libtsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libubsan0:amd64.
+Preparing to unpack .../libubsan0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libubsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libcilkrts5:amd64.
+Preparing to unpack .../libcilkrts5_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libcilkrts5:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libmpx0:amd64.
+Preparing to unpack .../libmpx0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libmpx0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../libquadmath0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libquadmath0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libgcc-5-dev:amd64.
+Preparing to unpack .../libgcc-5-dev_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libgcc-5-dev:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package gcc-5.
+Preparing to unpack .../gcc-5_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking gcc-5 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../gcc_4%3a5.3.1-1ubuntu1_amd64.deb ...
+Unpacking gcc (4:5.3.1-1ubuntu1) ...
+Selecting previously unselected package libc-dev-bin.
+Preparing to unpack .../libc-dev-bin_2.23-0ubuntu10_amd64.deb ...
+Unpacking libc-dev-bin (2.23-0ubuntu10) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../linux-libc-dev_4.4.0-138.164_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (4.4.0-138.164) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../libc6-dev_2.23-0ubuntu10_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.23-0ubuntu10) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../manpages-dev_4.04-2_all.deb ...
+Unpacking manpages-dev (4.04-2) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up libmpc3:amd64 (1.0.3-1) ...
+Setting up binutils (2.26.1-1ubuntu1~16.04.7) ...
+Setting up libisl15:amd64 (0.16.1-1) ...
+Setting up cpp-5 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up cpp (4:5.3.1-1ubuntu1) ...
+Setting up libcc1-0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libgomp1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libitm1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libatomic1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libasan2:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up liblsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libtsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libubsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libcilkrts5:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libmpx0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libquadmath0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libgcc-5-dev:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up gcc-5 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up gcc (4:5.3.1-1ubuntu1) ...
+Setting up libc-dev-bin (2.23-0ubuntu10) ...
+Setting up linux-libc-dev:amd64 (4.4.0-138.164) ...
+Setting up libc6-dev:amd64 (2.23-0ubuntu10) ...
+Setting up manpages-dev (4.04-2) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+binutils set to automatically installed.
+cpp set to automatically installed.
+cpp-5 set to automatically installed.
+gcc set to automatically installed.
+gcc-5 set to automatically installed.
+libasan2 set to automatically installed.
+libatomic1 set to automatically installed.
+libc-dev-bin set to automatically installed.
+libc6-dev set to automatically installed.
+libcc1-0 set to automatically installed.
+libcilkrts5 set to automatically installed.
+libgcc-5-dev set to automatically installed.
+libgomp1 set to automatically installed.
+libisl15 set to automatically installed.
+libitm1 set to automatically installed.
+liblsan0 set to automatically installed.
+libmpc3 set to automatically installed.
+libmpx0 set to automatically installed.
+libquadmath0 set to automatically installed.
+libtsan0 set to automatically installed.
+libubsan0 set to automatically installed.
+linux-libc-dev set to automatically installed.
+manpages-dev set to automatically installed.
+Pulling bat 
+rustup: gpg available. signatures will be verified
+rustup: downloading manifest for 'stable'
+rustup: downloading toolchain for 'stable'
+gpg: assuming signed data in `/root/.rustup.sh/dl/cc8107b58e540b213a90/rust-1.30.1-x86_64-unknown-linux-gnu.tar.gz'
+gpg: Signature made Thu Nov  8 17:15:57 2018 UTC using RSA key ID 7B3B09DC
+gpg: Good signature from "Rust Language (Tag and Release Signing Key) <rust-key@rust-lang.org>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 108F 6620 5EAE B0AA A8DD  5E1C 85AB 96E6 FA1B E5FE
+     Subkey fingerprint: C134 66B7 E169 A085 1886  3216 5CB4 A934 7B3B 09DC
+rustup: installing toolchain for 'stable'
+rustup: extracting installer
+install: creating uninstall script at /root/build_bat/parts/bat/rust/lib/rustlib/uninstall.sh
+install: installing component 'rustc'
+install: installing component 'cargo'
+install: installing component 'rls-preview'
+install: installing component 'clippy-preview'
+install: installing component 'rustfmt-preview'
+install: installing component 'llvm-tools-preview'
+install: installing component 'rust-analysis-x86_64-unknown-linux-gnu'
+install: installing component 'rust-std-x86_64-unknown-linux-gnu'
+install: installing component 'rust-docs'
+
+    Rust is ready to roll.
+
+/root/build_bat/parts/bat/rust/rustup.sh --prefix=/root/build_bat/parts/bat/rust --disable-sudo --save
+/root/build_bat/parts/bat/rust/bin/cargo fetch --manifest-path /root/build_bat/parts/bat/src/Cargo.toml
+Building bat 
+
+running 19 tests
+test config::empty ... ok
+test config::comments ... ok
+test config::multi_line ... ok
+test config::multiple ... ok
+test config::single ... ok
+test config::quotes ... ok
+test inputfile::basic ... ok
+test inputfile::utf16le ... ok
+test line_range::test_parse_partial_max ... ok
+test line_range::test_parse_full ... ok
+test line_range::test_parse_fail ... ok
+test line_range::test_parse_partial_min ... ok
+test line_range::test_ranges_advanced ... ok
+test line_range::test_ranges_simple ... ok
+test line_range::test_ranges_empty ... ok
+test util::tests::basic ... ok
+test line_range::test_ranges_open_high ... ok
+test line_range::test_ranges_open_low ... ok
+test syntax_mapping::basic ... ok
+
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
+
+
+running 24 tests
+test basic ... FAILED
+test fail_directory ... FAILED
+test concatenate ... FAILED
+test fail_non_existing ... FAILED
+test concatenate_stdin ... FAILED
+test config_location_test ... FAILED
+test do_not_exit_directory ... FAILED
+test config_read_arguments_from_file ... FAILED
+test line_numbers ... FAILED
+test line_range_last_3 ... FAILED
+test pager_basic ... FAILED
+test stdin ... FAILED
+test line_range_2_3 ... FAILED
+test line_range_first_two ... FAILED
+test pager_disable ... FAILED
+test tabs_4 ... FAILED
+test line_range_multiple ... FAILED
+test pager_overwrite ... FAILED
+test tabs_4_wrapped ... FAILED
+test tabs_passthrough_wrapped ... FAILED
+test tabs_8 ... FAILED
+test tabs_8_wrapped ... FAILED
+test tabs_numbers ... FAILED
+test tabs_passthrough ... FAILED
+
+failures:
+
+---- basic stdout ----
+thread 'basic' panicked at 'called `Result::unwrap()` on an `Err` value: CargoError { kind: InvalidCommand, context: None, cause: Some(Os { code: 2, kind: NotFound, message: "No such file or directory" }) }', libcore/result.rs:1009:5
+note: Run with `RUST_BACKTRACE=1` for a backtrace.
+
+---- fail_directory stdout ----
+thread 'fail_directory' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- concatenate stdout ----
+thread 'concatenate' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- fail_non_existing stdout ----
+thread 'fail_non_existing' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- concatenate_stdin stdout ----
+thread 'concatenate_stdin' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- config_location_test stdout ----
+thread 'config_location_test' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- do_not_exit_directory stdout ----
+thread 'do_not_exit_directory' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- config_read_arguments_from_file stdout ----
+thread 'config_read_arguments_from_file' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- line_numbers stdout ----
+thread 'line_numbers' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- line_range_last_3 stdout ----
+thread 'line_range_last_3' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- pager_basic stdout ----
+thread 'pager_basic' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- stdin stdout ----
+thread 'stdin' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- line_range_2_3 stdout ----
+thread 'line_range_2_3' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- line_range_first_two stdout ----
+thread 'line_range_first_two' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- pager_disable stdout ----
+thread 'pager_disable' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_4 stdout ----
+thread 'tabs_4' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- line_range_multiple stdout ----
+thread 'line_range_multiple' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- pager_overwrite stdout ----
+thread 'pager_overwrite' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_4_wrapped stdout ----
+thread 'tabs_4_wrapped' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_passthrough_wrapped stdout ----
+thread 'tabs_passthrough_wrapped' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_8 stdout ----
+thread 'tabs_8' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_8_wrapped stdout ----
+thread 'tabs_8_wrapped' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_numbers stdout ----
+thread 'tabs_numbers' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_passthrough stdout ----
+thread 'tabs_passthrough' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+
+failures:
+    basic
+    concatenate
+    concatenate_stdin
+    config_location_test
+    config_read_arguments_from_file
+    do_not_exit_directory
+    fail_directory
+    fail_non_existing
+    line_numbers
+    line_range_2_3
+    line_range_first_two
+    line_range_last_3
+    line_range_multiple
+    pager_basic
+    pager_disable
+    pager_overwrite
+    stdin
+    tabs_4
+    tabs_4_wrapped
+    tabs_8
+    tabs_8_wrapped
+    tabs_numbers
+    tabs_passthrough
+    tabs_passthrough_wrapped
+
+test result: FAILED. 0 passed; 24 failed; 0 ignored; 0 measured; 0 filtered out
+
+/root/build_bat/parts/bat/rust/bin/cargo test -j8
+Failed to run '/root/build_bat/parts/bat/rust/bin/cargo test -j8' for 'bat': Exited with code 101.
+Verify that the part is using the correct parameters and try again.
+Stopping local:snapcraft-bat
+Creating snapcraft-bat
+Device fuse added to snapcraft-bat
+Waiting for a network connection...
+Network connection established
+core 16-2.35.5 from 'canonical' installed
+snapcraft 2.43.1 from Canonical✓ installed
+Mounting /home/alan/Source/4k/bat/bat into container
+Device /root/build_bat added to snapcraft-bat
+Installing build dependencies: binutils cpp cpp-5 gcc gcc-5 libasan2 libatomic1 libc-dev-bin libc6-dev libcc1-0 libcilkrts5 libgcc-5-dev libgomp1 libisl15 libitm1 liblsan0 libmpc3 libmpx0 libquadmath0 libtsan0 libubsan0 linux-libc-dev manpages-dev
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following package was automatically installed and is no longer required:
+  libfreetype6
+Use 'sudo apt autoremove' to remove it.
+Suggested packages:
+  binutils-doc cpp-doc gcc-5-locales gcc-multilib make autoconf automake
+  libtool flex bison gdb gcc-doc gcc-5-multilib gcc-5-doc libgcc1-dbg
+  libgomp1-dbg libitm1-dbg libatomic1-dbg libasan2-dbg liblsan0-dbg
+  libtsan0-dbg libubsan0-dbg libcilkrts5-dbg libmpx0-dbg libquadmath0-dbg
+  glibc-doc
+The following NEW packages will be installed:
+  binutils cpp cpp-5 gcc gcc-5 libasan2 libatomic1 libc-dev-bin libc6-dev
+  libcc1-0 libcilkrts5 libgcc-5-dev libgomp1 libisl15 libitm1 liblsan0 libmpc3
+  libmpx0 libquadmath0 libtsan0 libubsan0 linux-libc-dev manpages-dev
+0 upgraded, 23 newly installed, 0 to remove and 0 not upgraded.
+Need to get 27.3 MB of archives.
+After this operation, 99.9 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 libmpc3 amd64 1.0.3-1 [39.7 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 binutils amd64 2.26.1-1ubuntu1~16.04.7 [2309 kB]
+Get:3 http://archive.ubuntu.com/ubuntu xenial/main amd64 libisl15 amd64 0.16.1-1 [524 kB]
+Get:4 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 cpp-5 amd64 5.4.0-6ubuntu1~16.04.10 [7671 kB]
+Get:5 http://archive.ubuntu.com/ubuntu xenial/main amd64 cpp amd64 4:5.3.1-1ubuntu1 [27.7 kB]
+Get:6 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcc1-0 amd64 5.4.0-6ubuntu1~16.04.10 [38.8 kB]
+Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgomp1 amd64 5.4.0-6ubuntu1~16.04.10 [55.1 kB]
+Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libitm1 amd64 5.4.0-6ubuntu1~16.04.10 [27.4 kB]
+Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libatomic1 amd64 5.4.0-6ubuntu1~16.04.10 [8888 B]
+Get:10 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libasan2 amd64 5.4.0-6ubuntu1~16.04.10 [264 kB]
+Get:11 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 liblsan0 amd64 5.4.0-6ubuntu1~16.04.10 [105 kB]
+Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libtsan0 amd64 5.4.0-6ubuntu1~16.04.10 [244 kB]
+Get:13 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libubsan0 amd64 5.4.0-6ubuntu1~16.04.10 [95.3 kB]
+Get:14 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcilkrts5 amd64 5.4.0-6ubuntu1~16.04.10 [40.1 kB]
+Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libmpx0 amd64 5.4.0-6ubuntu1~16.04.10 [9764 B]
+Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libquadmath0 amd64 5.4.0-6ubuntu1~16.04.10 [131 kB]
+Get:17 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgcc-5-dev amd64 5.4.0-6ubuntu1~16.04.10 [2228 kB]
+Get:18 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 gcc-5 amd64 5.4.0-6ubuntu1~16.04.10 [8426 kB]
+Get:19 http://archive.ubuntu.com/ubuntu xenial/main amd64 gcc amd64 4:5.3.1-1ubuntu1 [5244 B]
+Get:20 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc-dev-bin amd64 2.23-0ubuntu10 [68.7 kB]
+Get:21 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-libc-dev amd64 4.4.0-138.164 [859 kB]
+Get:22 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc6-dev amd64 2.23-0ubuntu10 [2079 kB]
+Get:23 http://archive.ubuntu.com/ubuntu xenial/main amd64 manpages-dev all 4.04-2 [2048 kB]
+Fetched 27.3 MB in 4s (5799 kB/s)
+Selecting previously unselected package libmpc3:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25682 files and directories currently installed.)
+Preparing to unpack .../libmpc3_1.0.3-1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.0.3-1) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../binutils_2.26.1-1ubuntu1~16.04.7_amd64.deb ...
+Unpacking binutils (2.26.1-1ubuntu1~16.04.7) ...
+Selecting previously unselected package libisl15:amd64.
+Preparing to unpack .../libisl15_0.16.1-1_amd64.deb ...
+Unpacking libisl15:amd64 (0.16.1-1) ...
+Selecting previously unselected package cpp-5.
+Preparing to unpack .../cpp-5_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking cpp-5 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../cpp_4%3a5.3.1-1ubuntu1_amd64.deb ...
+Unpacking cpp (4:5.3.1-1ubuntu1) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../libcc1-0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libcc1-0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../libgomp1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libgomp1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../libitm1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libitm1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../libatomic1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libatomic1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libasan2:amd64.
+Preparing to unpack .../libasan2_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libasan2:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../liblsan0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking liblsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libtsan0:amd64.
+Preparing to unpack .../libtsan0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libtsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libubsan0:amd64.
+Preparing to unpack .../libubsan0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libubsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libcilkrts5:amd64.
+Preparing to unpack .../libcilkrts5_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libcilkrts5:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libmpx0:amd64.
+Preparing to unpack .../libmpx0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libmpx0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../libquadmath0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libquadmath0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libgcc-5-dev:amd64.
+Preparing to unpack .../libgcc-5-dev_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libgcc-5-dev:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package gcc-5.
+Preparing to unpack .../gcc-5_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking gcc-5 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../gcc_4%3a5.3.1-1ubuntu1_amd64.deb ...
+Unpacking gcc (4:5.3.1-1ubuntu1) ...
+Selecting previously unselected package libc-dev-bin.
+Preparing to unpack .../libc-dev-bin_2.23-0ubuntu10_amd64.deb ...
+Unpacking libc-dev-bin (2.23-0ubuntu10) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../linux-libc-dev_4.4.0-138.164_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (4.4.0-138.164) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../libc6-dev_2.23-0ubuntu10_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.23-0ubuntu10) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../manpages-dev_4.04-2_all.deb ...
+Unpacking manpages-dev (4.04-2) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up libmpc3:amd64 (1.0.3-1) ...
+Setting up binutils (2.26.1-1ubuntu1~16.04.7) ...
+Setting up libisl15:amd64 (0.16.1-1) ...
+Setting up cpp-5 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up cpp (4:5.3.1-1ubuntu1) ...
+Setting up libcc1-0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libgomp1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libitm1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libatomic1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libasan2:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up liblsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libtsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libubsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libcilkrts5:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libmpx0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libquadmath0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libgcc-5-dev:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up gcc-5 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up gcc (4:5.3.1-1ubuntu1) ...
+Setting up libc-dev-bin (2.23-0ubuntu10) ...
+Setting up linux-libc-dev:amd64 (4.4.0-138.164) ...
+Setting up libc6-dev:amd64 (2.23-0ubuntu10) ...
+Setting up manpages-dev (4.04-2) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+binutils set to automatically installed.
+cpp set to automatically installed.
+cpp-5 set to automatically installed.
+gcc set to automatically installed.
+gcc-5 set to automatically installed.
+libasan2 set to automatically installed.
+libatomic1 set to automatically installed.
+libc-dev-bin set to automatically installed.
+libc6-dev set to automatically installed.
+libcc1-0 set to automatically installed.
+libcilkrts5 set to automatically installed.
+libgcc-5-dev set to automatically installed.
+libgomp1 set to automatically installed.
+libisl15 set to automatically installed.
+libitm1 set to automatically installed.
+liblsan0 set to automatically installed.
+libmpc3 set to automatically installed.
+libmpx0 set to automatically installed.
+libquadmath0 set to automatically installed.
+libtsan0 set to automatically installed.
+libubsan0 set to automatically installed.
+linux-libc-dev set to automatically installed.
+manpages-dev set to automatically installed.
+Pulling bat 
+rustup: gpg available. signatures will be verified
+rustup: downloading manifest for 'stable'
+rustup: downloading toolchain for 'stable'
+gpg: assuming signed data in `/root/.rustup.sh/dl/cc8107b58e540b213a90/rust-1.30.1-x86_64-unknown-linux-gnu.tar.gz'
+gpg: Signature made Thu Nov  8 17:15:57 2018 UTC using RSA key ID 7B3B09DC
+gpg: Good signature from "Rust Language (Tag and Release Signing Key) <rust-key@rust-lang.org>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 108F 6620 5EAE B0AA A8DD  5E1C 85AB 96E6 FA1B E5FE
+     Subkey fingerprint: C134 66B7 E169 A085 1886  3216 5CB4 A934 7B3B 09DC
+rustup: installing toolchain for 'stable'
+rustup: extracting installer
+install: creating uninstall script at /root/build_bat/parts/bat/rust/lib/rustlib/uninstall.sh
+install: installing component 'rustc'
+install: installing component 'cargo'
+install: installing component 'rls-preview'
+install: installing component 'clippy-preview'
+install: installing component 'rustfmt-preview'
+install: installing component 'llvm-tools-preview'
+install: installing component 'rust-analysis-x86_64-unknown-linux-gnu'
+install: installing component 'rust-std-x86_64-unknown-linux-gnu'
+install: installing component 'rust-docs'
+
+    Rust is ready to roll.
+
+/root/build_bat/parts/bat/rust/rustup.sh --prefix=/root/build_bat/parts/bat/rust --disable-sudo --save
+/root/build_bat/parts/bat/rust/bin/cargo fetch --manifest-path /root/build_bat/parts/bat/src/Cargo.toml
+Building bat 
+
+running 19 tests
+test config::comments ... ok
+test config::multiple ... ok
+test inputfile::utf16le ... ok
+test config::multi_line ... ok
+test config::quotes ... ok
+test line_range::test_parse_partial_max ... ok
+test config::single ... ok
+test inputfile::basic ... ok
+test line_range::test_parse_partial_min ... ok
+test line_range::test_parse_fail ... ok
+test config::empty ... ok
+test line_range::test_ranges_advanced ... ok
+test line_range::test_ranges_empty ... ok
+test line_range::test_ranges_open_high ... ok
+test line_range::test_ranges_open_low ... ok
+test util::tests::basic ... ok
+test line_range::test_ranges_simple ... ok
+test line_range::test_parse_full ... ok
+test syntax_mapping::basic ... ok
+
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
+
+
+running 24 tests
+test concatenate ... FAILED
+test fail_non_existing ... FAILED
+test do_not_exit_directory ... FAILED
+test concatenate_stdin ... FAILED
+test basic ... FAILED
+test config_location_test ... FAILED
+test line_numbers ... FAILED
+test fail_directory ... FAILED
+test line_range_last_3 ... FAILED
+test line_range_first_two ... FAILED
+test line_range_2_3 ... FAILED
+test pager_overwrite ... FAILED
+test pager_disable ... FAILED
+test stdin ... FAILED
+test config_read_arguments_from_file ... FAILED
+test line_range_multiple ... FAILED
+test pager_basic ... FAILED
+test tabs_4 ... FAILED
+test tabs_4_wrapped ... FAILED
+test tabs_passthrough_wrapped ... FAILED
+test tabs_8_wrapped ... FAILED
+test tabs_8 ... FAILED
+test tabs_numbers ... FAILED
+test tabs_passthrough ... FAILED
+
+failures:
+
+---- concatenate stdout ----
+thread 'concatenate' panicked at 'called `Result::unwrap()` on an `Err` value: CargoError { kind: InvalidCommand, context: None, cause: Some(Os { code: 2, kind: NotFound, message: "No such file or directory" }) }', libcore/result.rs:1009:5
+note: Run with `RUST_BACKTRACE=1` for a backtrace.
+
+---- fail_non_existing stdout ----
+thread 'fail_non_existing' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- do_not_exit_directory stdout ----
+thread 'do_not_exit_directory' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- concatenate_stdin stdout ----
+thread 'concatenate_stdin' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- basic stdout ----
+thread 'basic' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- config_location_test stdout ----
+thread 'config_location_test' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- line_numbers stdout ----
+thread 'line_numbers' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- fail_directory stdout ----
+thread 'fail_directory' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- line_range_last_3 stdout ----
+thread 'line_range_last_3' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- line_range_first_two stdout ----
+thread 'line_range_first_two' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- line_range_2_3 stdout ----
+thread 'line_range_2_3' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- pager_overwrite stdout ----
+thread 'pager_overwrite' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- pager_disable stdout ----
+thread 'pager_disable' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- stdin stdout ----
+thread 'stdin' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- config_read_arguments_from_file stdout ----
+thread 'config_read_arguments_from_file' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- line_range_multiple stdout ----
+thread 'line_range_multiple' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- pager_basic stdout ----
+thread 'pager_basic' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_4 stdout ----
+thread 'tabs_4' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_4_wrapped stdout ----
+thread 'tabs_4_wrapped' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_passthrough_wrapped stdout ----
+thread 'tabs_passthrough_wrapped' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_8_wrapped stdout ----
+thread 'tabs_8_wrapped' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_8 stdout ----
+thread 'tabs_8' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_numbers stdout ----
+thread 'tabs_numbers' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_passthrough stdout ----
+thread 'tabs_passthrough' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+
+failures:
+    basic
+    concatenate
+    concatenate_stdin
+    config_location_test
+    config_read_arguments_from_file
+    do_not_exit_directory
+    fail_directory
+    fail_non_existing
+    line_numbers
+    line_range_2_3
+    line_range_first_two
+    line_range_last_3
+    line_range_multiple
+    pager_basic
+    pager_disable
+    pager_overwrite
+    stdin
+    tabs_4
+    tabs_4_wrapped
+    tabs_8
+    tabs_8_wrapped
+    tabs_numbers
+    tabs_passthrough
+    tabs_passthrough_wrapped
+
+test result: FAILED. 0 passed; 24 failed; 0 ignored; 0 measured; 0 filtered out
+
+/root/build_bat/parts/bat/rust/bin/cargo test -j8
+Failed to run '/root/build_bat/parts/bat/rust/bin/cargo test -j8' for 'bat': Exited with code 101.
+Verify that the part is using the correct parameters and try again.
+Stopping local:snapcraft-bat
+Creating snapcraft-bat
+Device fuse added to snapcraft-bat
+Remapping container filesystem                                                                                             Waiting for a network connection...
+Network connection established
+core 16-2.35.5 from 'canonical' installed
+snapcraft 2.43.1 from Canonical✓ installed
+Mounting /home/alan/Source/4k/bat/bat into container
+Device /root/build_bat added to snapcraft-bat
+Installing build dependencies: binutils cmake cmake-data cpp cpp-5 gcc gcc-5 libarchive13 libasan2 libatomic1 libc-dev-bin libc6-dev libcc1-0 libcilkrts5 libcurl3 libgcc-5-dev libgomp1 libisl15 libitm1 libjsoncpp1 liblsan0 libmpc3 libmpx0 libquadmath0 libtsan0 libubsan0 linux-libc-dev make manpages-dev zlib1g-dev
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following package was automatically installed and is no longer required:
+  libfreetype6
+Use 'sudo apt autoremove' to remove it.
+Suggested packages:
+  binutils-doc codeblocks eclipse ninja-build cpp-doc gcc-5-locales
+  gcc-multilib autoconf automake libtool flex bison gdb gcc-doc gcc-5-multilib
+  gcc-5-doc libgcc1-dbg libgomp1-dbg libitm1-dbg libatomic1-dbg libasan2-dbg
+  liblsan0-dbg libtsan0-dbg libubsan0-dbg libcilkrts5-dbg libmpx0-dbg
+  libquadmath0-dbg lrzip glibc-doc make-doc
+The following NEW packages will be installed:
+  binutils cmake cmake-data cpp cpp-5 gcc gcc-5 libarchive13 libasan2
+  libatomic1 libc-dev-bin libc6-dev libcc1-0 libcilkrts5 libcurl3 libgcc-5-dev
+  libgomp1 libisl15 libitm1 libjsoncpp1 liblsan0 libmpc3 libmpx0 libquadmath0
+  libtsan0 libubsan0 linux-libc-dev make manpages-dev zlib1g-dev
+0 upgraded, 30 newly installed, 0 to remove and 0 not upgraded.
+Need to get 31.9 MB of archives.
+After this operation, 122 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 cmake-data all 3.5.1-1ubuntu3 [1121 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libarchive13 amd64 3.1.2-11ubuntu0.16.04.4 [262 kB]
+Get:3 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcurl3 amd64 7.47.0-1ubuntu2.11 [186 kB]
+Get:4 http://archive.ubuntu.com/ubuntu xenial/main amd64 libjsoncpp1 amd64 1.7.2-1 [73.0 kB]
+Get:5 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 cmake amd64 3.5.1-1ubuntu3 [2623 kB]
+Get:6 http://archive.ubuntu.com/ubuntu xenial/main amd64 libmpc3 amd64 1.0.3-1 [39.7 kB]
+Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 binutils amd64 2.26.1-1ubuntu1~16.04.7 [2309 kB]
+Get:8 http://archive.ubuntu.com/ubuntu xenial/main amd64 libisl15 amd64 0.16.1-1 [524 kB]
+Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 cpp-5 amd64 5.4.0-6ubuntu1~16.04.10 [7671 kB]
+Get:10 http://archive.ubuntu.com/ubuntu xenial/main amd64 cpp amd64 4:5.3.1-1ubuntu1 [27.7 kB]
+Get:11 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcc1-0 amd64 5.4.0-6ubuntu1~16.04.10 [38.8 kB]
+Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgomp1 amd64 5.4.0-6ubuntu1~16.04.10 [55.1 kB]
+Get:13 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libitm1 amd64 5.4.0-6ubuntu1~16.04.10 [27.4 kB]
+Get:14 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libatomic1 amd64 5.4.0-6ubuntu1~16.04.10 [8888 B]
+Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libasan2 amd64 5.4.0-6ubuntu1~16.04.10 [264 kB]
+Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 liblsan0 amd64 5.4.0-6ubuntu1~16.04.10 [105 kB]
+Get:17 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libtsan0 amd64 5.4.0-6ubuntu1~16.04.10 [244 kB]
+Get:18 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libubsan0 amd64 5.4.0-6ubuntu1~16.04.10 [95.3 kB]
+Get:19 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcilkrts5 amd64 5.4.0-6ubuntu1~16.04.10 [40.1 kB]
+Get:20 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libmpx0 amd64 5.4.0-6ubuntu1~16.04.10 [9764 B]
+Get:21 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libquadmath0 amd64 5.4.0-6ubuntu1~16.04.10 [131 kB]
+Get:22 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgcc-5-dev amd64 5.4.0-6ubuntu1~16.04.10 [2228 kB]
+Get:23 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 gcc-5 amd64 5.4.0-6ubuntu1~16.04.10 [8426 kB]
+Get:24 http://archive.ubuntu.com/ubuntu xenial/main amd64 gcc amd64 4:5.3.1-1ubuntu1 [5244 B]
+Get:25 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc-dev-bin amd64 2.23-0ubuntu10 [68.7 kB]
+Get:26 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-libc-dev amd64 4.4.0-138.164 [859 kB]
+Get:27 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc6-dev amd64 2.23-0ubuntu10 [2079 kB]
+Get:28 http://archive.ubuntu.com/ubuntu xenial/main amd64 make amd64 4.1-6 [151 kB]
+Get:29 http://archive.ubuntu.com/ubuntu xenial/main amd64 manpages-dev all 4.04-2 [2048 kB]
+Get:30 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 zlib1g-dev amd64 1:1.2.8.dfsg-2ubuntu4.1 [168 kB]
+Fetched 31.9 MB in 8s (3976 kB/s)
+Selecting previously unselected package cmake-data.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25682 files and directories currently installed.)
+Preparing to unpack .../cmake-data_3.5.1-1ubuntu3_all.deb ...
+Unpacking cmake-data (3.5.1-1ubuntu3) ...
+Selecting previously unselected package libarchive13:amd64.
+Preparing to unpack .../libarchive13_3.1.2-11ubuntu0.16.04.4_amd64.deb ...
+Unpacking libarchive13:amd64 (3.1.2-11ubuntu0.16.04.4) ...
+Selecting previously unselected package libcurl3:amd64.
+Preparing to unpack .../libcurl3_7.47.0-1ubuntu2.11_amd64.deb ...
+Unpacking libcurl3:amd64 (7.47.0-1ubuntu2.11) ...
+Selecting previously unselected package libjsoncpp1:amd64.
+Preparing to unpack .../libjsoncpp1_1.7.2-1_amd64.deb ...
+Unpacking libjsoncpp1:amd64 (1.7.2-1) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../cmake_3.5.1-1ubuntu3_amd64.deb ...
+Unpacking cmake (3.5.1-1ubuntu3) ...
+Selecting previously unselected package libmpc3:amd64.
+Preparing to unpack .../libmpc3_1.0.3-1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.0.3-1) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../binutils_2.26.1-1ubuntu1~16.04.7_amd64.deb ...
+Unpacking binutils (2.26.1-1ubuntu1~16.04.7) ...
+Selecting previously unselected package libisl15:amd64.
+Preparing to unpack .../libisl15_0.16.1-1_amd64.deb ...
+Unpacking libisl15:amd64 (0.16.1-1) ...
+Selecting previously unselected package cpp-5.
+Preparing to unpack .../cpp-5_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking cpp-5 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../cpp_4%3a5.3.1-1ubuntu1_amd64.deb ...
+Unpacking cpp (4:5.3.1-1ubuntu1) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../libcc1-0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libcc1-0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../libgomp1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libgomp1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../libitm1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libitm1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../libatomic1_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libatomic1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libasan2:amd64.
+Preparing to unpack .../libasan2_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libasan2:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../liblsan0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking liblsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libtsan0:amd64.
+Preparing to unpack .../libtsan0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libtsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libubsan0:amd64.
+Preparing to unpack .../libubsan0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libubsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libcilkrts5:amd64.
+Preparing to unpack .../libcilkrts5_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libcilkrts5:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libmpx0:amd64.
+Preparing to unpack .../libmpx0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libmpx0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../libquadmath0_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libquadmath0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package libgcc-5-dev:amd64.
+Preparing to unpack .../libgcc-5-dev_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking libgcc-5-dev:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package gcc-5.
+Preparing to unpack .../gcc-5_5.4.0-6ubuntu1~16.04.10_amd64.deb ...
+Unpacking gcc-5 (5.4.0-6ubuntu1~16.04.10) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../gcc_4%3a5.3.1-1ubuntu1_amd64.deb ...
+Unpacking gcc (4:5.3.1-1ubuntu1) ...
+Selecting previously unselected package libc-dev-bin.
+Preparing to unpack .../libc-dev-bin_2.23-0ubuntu10_amd64.deb ...
+Unpacking libc-dev-bin (2.23-0ubuntu10) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../linux-libc-dev_4.4.0-138.164_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (4.4.0-138.164) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../libc6-dev_2.23-0ubuntu10_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.23-0ubuntu10) ...
+Selecting previously unselected package make.
+Preparing to unpack .../archives/make_4.1-6_amd64.deb ...
+Unpacking make (4.1-6) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../manpages-dev_4.04-2_all.deb ...
+Unpacking manpages-dev (4.04-2) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-2ubuntu4.1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-2ubuntu4.1) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Setting up cmake-data (3.5.1-1ubuntu3) ...
+Setting up libarchive13:amd64 (3.1.2-11ubuntu0.16.04.4) ...
+Setting up libcurl3:amd64 (7.47.0-1ubuntu2.11) ...
+Setting up libjsoncpp1:amd64 (1.7.2-1) ...
+Setting up cmake (3.5.1-1ubuntu3) ...
+Setting up libmpc3:amd64 (1.0.3-1) ...
+Setting up binutils (2.26.1-1ubuntu1~16.04.7) ...
+Setting up libisl15:amd64 (0.16.1-1) ...
+Setting up cpp-5 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up cpp (4:5.3.1-1ubuntu1) ...
+Setting up libcc1-0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libgomp1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libitm1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libatomic1:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libasan2:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up liblsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libtsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libubsan0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libcilkrts5:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libmpx0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libquadmath0:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up libgcc-5-dev:amd64 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up gcc-5 (5.4.0-6ubuntu1~16.04.10) ...
+Setting up gcc (4:5.3.1-1ubuntu1) ...
+Setting up libc-dev-bin (2.23-0ubuntu10) ...
+Setting up linux-libc-dev:amd64 (4.4.0-138.164) ...
+Setting up libc6-dev:amd64 (2.23-0ubuntu10) ...
+Setting up make (4.1-6) ...
+Setting up manpages-dev (4.04-2) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-2ubuntu4.1) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+binutils set to automatically installed.
+cmake set to automatically installed.
+cmake-data set to automatically installed.
+cpp set to automatically installed.
+cpp-5 set to automatically installed.
+gcc set to automatically installed.
+gcc-5 set to automatically installed.
+libarchive13 set to automatically installed.
+libasan2 set to automatically installed.
+libatomic1 set to automatically installed.
+libc-dev-bin set to automatically installed.
+libc6-dev set to automatically installed.
+libcc1-0 set to automatically installed.
+libcilkrts5 set to automatically installed.
+libcurl3 set to automatically installed.
+libgcc-5-dev set to automatically installed.
+libgomp1 set to automatically installed.
+libisl15 set to automatically installed.
+libitm1 set to automatically installed.
+libjsoncpp1 set to automatically installed.
+liblsan0 set to automatically installed.
+libmpc3 set to automatically installed.
+libmpx0 set to automatically installed.
+libquadmath0 set to automatically installed.
+libtsan0 set to automatically installed.
+libubsan0 set to automatically installed.
+linux-libc-dev set to automatically installed.
+make set to automatically installed.
+manpages-dev set to automatically installed.
+zlib1g-dev set to automatically installed.
+Pulling bat 
+rustup: gpg available. signatures will be verified
+rustup: downloading manifest for 'stable'
+rustup: downloading toolchain for 'stable'
+gpg: assuming signed data in `/root/.rustup.sh/dl/cc8107b58e540b213a90/rust-1.30.1-x86_64-unknown-linux-gnu.tar.gz'
+gpg: Signature made Thu Nov  8 17:15:57 2018 UTC using RSA key ID 7B3B09DC
+gpg: Good signature from "Rust Language (Tag and Release Signing Key) <rust-key@rust-lang.org>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 108F 6620 5EAE B0AA A8DD  5E1C 85AB 96E6 FA1B E5FE
+     Subkey fingerprint: C134 66B7 E169 A085 1886  3216 5CB4 A934 7B3B 09DC
+rustup: installing toolchain for 'stable'
+rustup: extracting installer
+install: creating uninstall script at /root/build_bat/parts/bat/rust/lib/rustlib/uninstall.sh
+install: installing component 'rustc'
+install: installing component 'cargo'
+install: installing component 'rls-preview'
+install: installing component 'clippy-preview'
+install: installing component 'rustfmt-preview'
+install: installing component 'llvm-tools-preview'
+install: installing component 'rust-analysis-x86_64-unknown-linux-gnu'
+install: installing component 'rust-std-x86_64-unknown-linux-gnu'
+install: installing component 'rust-docs'
+
+    Rust is ready to roll.
+
+/root/build_bat/parts/bat/rust/rustup.sh --prefix=/root/build_bat/parts/bat/rust --disable-sudo --save
+/root/build_bat/parts/bat/rust/bin/cargo fetch --manifest-path /root/build_bat/parts/bat/src/Cargo.toml
+Building bat 
+
+running 19 tests
+test config::empty ... ok
+test config::comments ... ok
+test config::multiple ... ok
+test config::multi_line ... ok
+test config::quotes ... ok
+test inputfile::basic ... ok
+test config::single ... ok
+test line_range::test_parse_fail ... ok
+test line_range::test_parse_partial_max ... ok
+test inputfile::utf16le ... ok
+test line_range::test_parse_partial_min ... ok
+test line_range::test_ranges_empty ... ok
+test line_range::test_ranges_open_high ... ok
+test util::tests::basic ... ok
+test line_range::test_ranges_open_low ... ok
+test syntax_mapping::basic ... ok
+test line_range::test_ranges_advanced ... ok
+test line_range::test_parse_full ... ok
+test line_range::test_ranges_simple ... ok
+
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
+
+
+running 24 tests
+test basic ... FAILED
+test config_read_arguments_from_file ... FAILED
+test do_not_exit_directory ... FAILED
+test concatenate_stdin ... FAILED
+test config_location_test ... FAILED
+test fail_directory ... FAILED
+test fail_non_existing ... FAILED
+test concatenate ... FAILED
+test line_numbers ... FAILED
+test line_range_first_two ... FAILED
+test line_range_last_3 ... FAILED
+test line_range_2_3 ... FAILED
+test pager_overwrite ... FAILED
+test pager_disable ... FAILED
+test pager_basic ... FAILED
+test stdin ... FAILED
+test tabs_8 ... FAILED
+test tabs_numbers ... FAILED
+test tabs_8_wrapped ... FAILED
+test tabs_4_wrapped ... FAILED
+test tabs_passthrough ... FAILED
+test tabs_4 ... FAILED
+test tabs_passthrough_wrapped ... FAILED
+test line_range_multiple ... FAILED
+
+failures:
+
+---- basic stdout ----
+thread 'basic' panicked at 'called `Result::unwrap()` on an `Err` value: CargoError { kind: InvalidCommand, context: None, cause: Some(Os { code: 2, kind: NotFound, message: "No such file or directory" }) }', libcore/result.rs:1009:5
+note: Run with `RUST_BACKTRACE=1` for a backtrace.
+
+---- config_read_arguments_from_file stdout ----
+thread 'config_read_arguments_from_file' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- do_not_exit_directory stdout ----
+thread 'do_not_exit_directory' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- concatenate_stdin stdout ----
+thread 'concatenate_stdin' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- config_location_test stdout ----
+thread 'config_location_test' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- fail_directory stdout ----
+thread 'fail_directory' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- fail_non_existing stdout ----
+thread 'fail_non_existing' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- concatenate stdout ----
+thread 'concatenate' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- line_numbers stdout ----
+thread 'line_numbers' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- line_range_first_two stdout ----
+thread 'line_range_first_two' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- line_range_last_3 stdout ----
+thread 'line_range_last_3' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- line_range_2_3 stdout ----
+thread 'line_range_2_3' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- pager_overwrite stdout ----
+thread 'pager_overwrite' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- pager_disable stdout ----
+thread 'pager_disable' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- pager_basic stdout ----
+thread 'pager_basic' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- stdin stdout ----
+thread 'stdin' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_8 stdout ----
+thread 'tabs_8' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_numbers stdout ----
+thread 'tabs_numbers' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_8_wrapped stdout ----
+thread 'tabs_8_wrapped' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_4_wrapped stdout ----
+thread 'tabs_4_wrapped' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_passthrough stdout ----
+thread 'tabs_passthrough' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_4 stdout ----
+thread 'tabs_4' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- tabs_passthrough_wrapped stdout ----
+thread 'tabs_passthrough_wrapped' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+---- line_range_multiple stdout ----
+thread 'line_range_multiple' panicked at 'Once instance has previously been poisoned', libstd/sync/once.rs:371:21
+
+
+failures:
+    basic
+    concatenate
+    concatenate_stdin
+    config_location_test
+    config_read_arguments_from_file
+    do_not_exit_directory
+    fail_directory
+    fail_non_existing
+    line_numbers
+    line_range_2_3
+    line_range_first_two
+    line_range_last_3
+    line_range_multiple
+    pager_basic
+    pager_disable
+    pager_overwrite
+    stdin
+    tabs_4
+    tabs_4_wrapped
+    tabs_8
+    tabs_8_wrapped
+    tabs_numbers
+    tabs_passthrough
+    tabs_passthrough_wrapped
+
+test result: FAILED. 0 passed; 24 failed; 0 ignored; 0 measured; 0 filtered out
+
+/root/build_bat/parts/bat/rust/bin/cargo test -j8
+Failed to run '/root/build_bat/parts/bat/rust/bin/cargo test -j8' for 'bat': Exited with code 101.
+Verify that the part is using the correct parameters and try again.
+Stopping local:snapcraft-bat

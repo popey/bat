@@ -1,0 +1,21 @@
+name: bat
+version: git
+summary: "A cat(1) clone with wings"
+description: |
+  Syntax highlighting
+    - bat supports syntax highlighting for a large number of programming and markup languages
+  Git integration
+    - bat communicates with git to show modifications with respect to the index
+  Show non-printable characters
+    - You can use the -A/--show-all option to show and highlight non-printable characters:
+
+grade: stable
+confinement: classic
+
+parts:
+  bat:
+    plugin: rust
+    source: ./
+    build-packages:
+      - zlib1g-dev
+      - cmake
